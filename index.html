@@ -1,0 +1,47 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>internet terminal</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+			<div class="content"> 
+				<p id="LastLogin">Last login: </p>
+				<a href="#SkipAsciiHello" class="AsciiAccessibility">SKIP ASII</a>
+				<p id="ascii">
+ _  _  ____  __     ___  __   _  _  ____  _   
+/ )( \(  __)(  )   / __)/  \ ( \/ )(  __)/ \  
+\ /\ / ) _) / (_/\( (__(  O )/ \/ \ ) _) \_/  
+(_/\_)(____)\____/ \___)\__/ \_)(_/(____)(_)  
+				</p>
+				<a title="SkipAsciiHello"></a>
+				<p>> Welcome to my terminal!</p>
+				<p>> If you are the owner of the URL "boba.online", <a href="/please.html">please click here. </a></p>
+				<p>> For everyone else:</p>
+					<div class="links">
+						<p>> LINKS</p>
+						<ul>
+							<li>- <a href="https://tumblr.com/boba-online">Tumblr</a></li>
+							<li>- <a href="https://bsky.app/profile/bobas.online">Bluesky</a></li>
+						</ul>
+					</div>
+					<div class="links" style="padding-top: 10px;">
+						<p>> THINGS I'VE MADE</p>
+						<ul>
+							<li>- <a href="/tinydesk">Tiny Desk downloads</a></li>
+						</ul>
+					</div>
+			</div>
+			<div class="attribution">
+				<a href="https://idreesinc.com/monocraft.html">Monocraft font by Idrees Hassan</a>
+			</div>
+	</body>
+	<script>
+	var date = new Date();
+	var n = date.toDateString();
+	var time = date.toLocaleTimeString();
+	document.getElementById('LastLogin').textContent +=  n + ' ' + time;
+	</script>
+</html>
